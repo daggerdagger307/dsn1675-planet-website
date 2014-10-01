@@ -31,7 +31,8 @@ img {
 }
 
 .main {
-    background-color: #dddddd; 
+    background-color: #dddddd;  
+    overflow: hidden;
 }
 
 .mars {
@@ -60,7 +61,7 @@ img {
     
 }
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 38em) {
 
     .mars {
         float: left;
@@ -70,6 +71,12 @@ img {
         float: left;
     }
 }
+
+.gutter {
+    padding: 1rem 2rem;
+}
+
+
 
 
 
