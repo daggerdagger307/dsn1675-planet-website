@@ -16,32 +16,63 @@ html {
   text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 60em) {
+    
+    html {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    
+    html {
+        font-size: 1120%;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+    
+    html {
+        font-size: 130%;
+    }
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
+    
 }
 
 body {
+    
   margin: 0;
   padding: 0;
+    
 }
 
 img {
+    
   display: block;
   width: 100%;
+    
 }
 
 .main {
+    
     background-color: #ccc;  
     overflow: hidden;
+    
 }
 
 .mars {
+    
     text-align: center;
     padding: 0;
     margin: 0;
+    
 }
 
 .list {
+    
     margin: 0;
     color: #0074d9;
     list-style-type: none;
@@ -50,35 +81,11 @@ img {
     
 }
 
-@media only screen and (min-width: 20em) {
-    
-    .list li {
-        display: inline-block;
-        margin: .15rem;
-}
-    .list {
-        text-align: center;
-        
-    }
-    
-}
-
-@media only screen and (min-width: 38em) {
-
-    .mars {
-        float: left;
-    }
-    
-    .list li {
-        float: left;
-    }
-}
-
-
-
 .sun {
+    
     background-color: #f0f0f0;
     text-align: center
+        
 }
 
 
@@ -106,9 +113,95 @@ img {
 
 }
 
+.climate {
+    
+    text-align: center;
+    
+}
 
+.footer-nav a {
 
+    text-decoration: none;
+    
+}
 
+@media only screen and (min-width: 25em) {
+    
+    .list li {
+        
+        display: inline-block;
+        margin: .15rem;
+}
+    .list {
+        
+        text-align: center;
+        
+    } 
+    
+    .copy {
+        
+        text-align: center;
+    }
+     
+    .footer-nav li::after{
+        
+        content: "·";
+        color: #666;
+        padding-left: .5em;
+        
+    }
+    
+    .footer-nav li:last-child::after{
+        
+        content: none;
+    
+    }
+   
+}
+
+@media only screen and (min-width: 38em) {
+
+    .mars {
+        
+        float: left;
+    }
+  
+    .footer {
+        
+        text-align: right;
+    }
+    
+    .copy {
+        
+        text-align: left;
+    }
+    
+    .climate {
+        
+        text-align: left;
+}
+ .footer-nav {
+ 
+    text-align: right;
+    
+    }   
+    
+}
+
+@media only screen and (min-width: 60em) {
+
+   .data dt {
+        float: left;
+       width: 10rem;
+    }
+    
+    .data dd {
+        
+        clear: right;
+    
+    }
+  
+}
 
 
 
