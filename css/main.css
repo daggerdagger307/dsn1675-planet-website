@@ -120,6 +120,59 @@ img {
         
 }
 
+.join {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input + label {
+    display: inline-block;
+}
+
+.name {
+    width: 100%;
+    height: 4em;
+}
+
+.email {
+    width: 100%;
+    height: 4em;
+}
+
+.age {
+    width: 100%;
+    height: 4em;
+}
+
+.explain {
+    height: 20rem;
+    width: 100%;
+
+}
+
+button {
+    border-radius: none;
+    font-size: 2em;
+    padding: 10;
+    margin: 0;
+}
+
+.awesome {
+    text-align: left
+}
+
+form {
+    max-width: 42em;
+    margin: 0 auto;
+}
+
+.radio {
+    white-space: nowrap;
+}
 
 .bottomlist {
 
