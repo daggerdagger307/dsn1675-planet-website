@@ -10,11 +10,18 @@
 </head>
 <body>
 
+<ul class="skip-links">
+
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to the main content</a></li>
+    
+</ul>
+    
 <main class="main">
     
-    <h1 class="mars giga pad-top gutter">Mars</h1>
+    <h1 role="banner" class="mars giga pad-top gutter" id="top">Mars</h1>
     
-        <nav>
+        <nav role="navigation" id="nav">
             <ul class="list giga island">
                 <li class="push"><a href="index.html">Planet</a></li>
                 <li class="push"><a href="moons.html">Moons</a></li>
@@ -29,8 +36,8 @@
     <div class="unit unit-sx-1 unit-s-1 unit-m-1-2 unit-l-1-3">
         <img src="images/Water_ice_clouds_hanging_above_Tharsis_PIA02653_black_background.jpg" alt="mars">
     </div>
-    <div class="unit unit-m-1-2 unit-l-2-3">
-        <h2 class="giga gutter pad-top">Mars</h2>
+    <div role="complementary" class="unit unit-m-1-2 unit-l-2-3">
+        <h2 role="main" class="giga gutter pad-top" id="main" role="main">Mars</h2>
         <p class="gutter">Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often described as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance.</p>
     </div>
 </div>
@@ -91,8 +98,8 @@
     </div>
 </div>
 
-<footer class="sectiondark grid"> 
-    <p class="copy micro push-none gutter-1-2 unit unit-s-1 unit-m-1-2 unit-l-1-2">© 2014 Venus Planetary Consortium</p>
+<footer role="contentinfo" class="sectiondark grid"> 
+    <p class="copy micro push-none gutter-1-2 unit unit-s-1 unit-m-1-2 unit-l-1-2">© 2014 Venus Planetary Consortium . <a href="#top">Top</a></p>
     <ul class="footer-nav list push-none gutter-1-2 milli unit unit-xs-1-2 unit-s-1 unit-m-1-2 unit-l-1-2">
         <li><a href="index.html">Planet</a></li>
         <li><a href="moons.html">Moons</a></li>

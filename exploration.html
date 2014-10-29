@@ -10,11 +10,18 @@
 </head>
 <body>
 
-<main class="main">
+    <ul class="skip-links">
+
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to the main content</a></li>
     
-    <h1 class="mars giga pad-top gutter">Mars</h1>
+</ul>
     
-        <nav>
+<main role="main" class="main">
+    
+    <h1 role="banner" class="mars giga pad-top gutter" id="top">Mars</h1>
+    
+        <nav role="navigation" id="nav">
             <ul class="list giga island">
                 <li class="push"><a href="index.html">Planet</a></li>
                 <li class="push"><a href="moons.html">Moons</a></li>
@@ -24,9 +31,9 @@
     </main>
     <div class="sun exa push"><h2>Exploration</h2></div>
 
-<footer class="sectiondark grid"> 
-    <p class="micro push-none gutter-1-2 unit unit-s-1-2 unit-m-1-2 unit-l-1-2">© 2014 Venus Planetary Consortium</p>
-    <ul class="list push-none gutter-1-2 milli unit unit-xs-1-2 unit-s-1 unit-m-1-2 unit-l-1-2">
+<footer role="contentinfo" class="sectiondark grid"> 
+    <p class="copy micro push-none gutter-1-2 unit unit-s-1 unit-m-1-2 unit-l-1-2">© 2014 Venus Planetary Consortium . <a href="#top">Top</a></p>
+    <ul class="footer-nav list push-none gutter-1-2 milli unit unit-xs-1-2 unit-s-1 unit-m-1-2 unit-l-1-2">
         <li><a href="index.html">Planet</a></li>
         <li><a href="moons.html">Moons</a></li>
         <li><a href="exploration.html">Exploration</a></li>
