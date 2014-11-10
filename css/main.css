@@ -9,7 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 
-  font: normal 100%/1.5 sans-serif;
+
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -76,16 +76,22 @@ a:focus {
 
 body {
     
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
     
 }
 
 img {
     
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
     
+}
+
+.bordertop {
+
+    border-top: 15px solid #0074d9;
+
 }
 
 .main {
@@ -103,7 +109,8 @@ img {
     
 }
 
-.list {
+
+.nav {
     
     margin: 0;
     color: #0074d9;
@@ -111,6 +118,28 @@ img {
     padding: .5rem 0;
     overflow: hidden;
     
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+
+    display: block;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active 
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    
+    background-color: #0074d9;
+    color: #fff;
+
 }
 
 .sun {
@@ -212,12 +241,12 @@ form {
 
 @media only screen and (min-width: 25em) {
     
-    .list li {
+    .nav li {
         
         display: inline-block;
         margin: .15rem;
 }
-    .list {
+    .nav {
         
         text-align: center;
         
@@ -228,7 +257,7 @@ form {
         text-align: center;
     }
      
-    .footer-nav li::after{
+    .footer-nav li::after {
         
         content: "·";
         color: #666;
@@ -240,6 +269,13 @@ form {
         
         content: none;
     
+    }
+    
+    .footer-nav a,
+    .footer-nav a:link,
+    .footer-nav a:visited {
+    
+        display: inline-block;
     }
    
 }
